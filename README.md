@@ -75,15 +75,15 @@ High-level components:
 3. **Control Design**
    - Design cascaded PID controllers for hover, forward **&** backward transition, and cruise.
    - Implement four transition-control strategies:
-     1. Dual-controller attitude sharing with thrust augmentation
-     2. PID blending with fixed incidence
-     3. Gain-scheduled PID (decoupled)
-     4. Hybrid blending with feedforward compensation
+     1. Blended Control with Fixed Incidence Angle
+     2. Dual-Controller Attitude Sharing 
+     3. Wing-Dominant Attitude, Blended Altitude
+     4. Augmented Thrust Compensation
    - Tuned using step-response analysis and Control System tuner application in MATLAB 
 
 4. **Validation**
    - Execute waypoint-driven mission profiles in SIL.
-   - Compare metrics: altitude error, time-to-cruise, transition stability, failure/crash rate.
+   - Compare metrics: Cruise Establishment Time, Backward-Transition Overshoot, Peak Thrust Demand, Altitude Deviation.
    
 5. **Analysis**
    - Quantitative results (metrics & plots).
@@ -103,10 +103,7 @@ High-level components:
 | Backward Transition Altitude Error | < 1.6 m | Stable control |
 | Controller Architecture | Gain-scheduled PID | Low complexity, reliable |
 
-- Additional results available as plots and animations in `/results/`:- `images/transition_altitude_error.png` → altitude vs. time  
-  - `images/flightpath_3d.png` → 3D trajectory of hybrid UAV  
-  - `images/control_response_comparison.png` → PID response plots  
-  - `images/flight_animation.gif` → VTOL → Cruise → Hover sequence  
+- Additional results available as plots in `/simulation/transition strategy` 
 
 ---
 ## 🚀 Future Work
@@ -120,7 +117,9 @@ High-level components:
 ## 💻 Installation & Usage
 ### Requirements
 - MATLAB R2023a or later  
-- Simulink Aerospace Blockset  
+- Simulink Aerospace Blockset
+- Simulink Optimization Blockset
+- Simulink Control System Tuner  
 - Python 3.9+ (for Battery sizing algorithm)  
 - Libraries: `numpy`, `matplotlib`, `pandas`
 
