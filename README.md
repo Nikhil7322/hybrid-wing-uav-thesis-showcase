@@ -125,7 +125,7 @@ High-level components:
 - Libraries: `numpy`, `matplotlib`, `pandas`
 
 ---
-📫 Contact
+## 📫 Contact
 
 Nikhil
 Dual Degree Researcher, Dynamics & Controls (IIT Bombay)  
