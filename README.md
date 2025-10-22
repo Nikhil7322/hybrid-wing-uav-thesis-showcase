@@ -124,5 +124,15 @@ High-level components:
 - Python 3.9+ (for Battery sizing algorithm)  
 - Libraries: `numpy`, `matplotlib`, `pandas`
 
+---
+📫 Contact
+
+Nikhil
+Dual Degree Researcher, Dynamics & Controls (IIT Bombay)  
+✉️ nikhilyadav.07n@gmail.com   
+🔗 https://www.linkedin.com/in/nikhil-yadav-07n/
+
+🧠 Open to research collaborations in UAV dynamics, control, and autonomy.
+
 
 
